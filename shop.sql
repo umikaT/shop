@@ -17,7 +17,7 @@ CREATE TABLE `Users` (
   `first_name` varchar(26),
   `last_name` varchar(40),
   `email` varchar(254) UNIQUE,
-  `dob` date,
+  `dob` date CHECK(YEAR(dob)>=),
   `address` int,
   `phone` char(17),
   `password` varchar(20)
@@ -25,7 +25,7 @@ CREATE TABLE `Users` (
 
 CREATE TABLE `Cart` (
   `cart_id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `user` int,
+  `user_id` int,
   `product` int
 );
 
@@ -64,7 +64,7 @@ CREATE TABLE `OrdersProducts` (
 CREATE TABLE `Products` (
   `product_id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `product_name` varchar(50) NOT NULL,
-  `product_price` decimal(12.2) NOT NULL,
+  `product_price` decimal(12.2) NOT NULL CHECK (product_price >=0),
   `product_category` int NOT NULL,
   `product_size` int,
   `supplier_name` varchar(60) NOT NULL,
@@ -119,7 +119,7 @@ ALTER TABLE `Payments` ADD FOREIGN KEY (`method`) REFERENCES `PaymentMethods` (`
 
 ALTER TABLE `Cart` ADD FOREIGN KEY (`product`) REFERENCES `CartProducts` (`cart_id`);
 
-ALTER TABLE `Cart` ADD FOREIGN KEY (`user`) REFERENCES `Users` (`user_id`);
+ALTER TABLE `Cart` ADD FOREIGN KEY (`user_id`) REFERENCES `Users` (`user_id`);
 
 ALTER TABLE `Products` ADD FOREIGN KEY (`product_id`) REFERENCES `ProductSizes` (`product`);
 
