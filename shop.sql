@@ -1,3 +1,4 @@
+CREATE DATABASE shop;
 use shop;
 CREATE TABLE Addresses (
   address_id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
