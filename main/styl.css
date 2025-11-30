@@ -1,24 +1,27 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.meskie, .damskie {
+    display: flex;
+}
+
+
+
 .dostawa {
+    margin-top: 0;
     background-color: black;
     color: white;
-    margin-top: 0px;
     height: 30px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
-    height: 30px;
-
+   
 }
 i {
     font-size: 20px;
     margin-top: 2%;
 }
-#dostawa {
-    padding: 5px;
-}
+
 .menu {
     background-color: white;
     display: flex;
@@ -224,3 +227,8 @@ footer {
     text-decoration: none;
     color: black;
 }
+.znizkaprawo > .inputzapisz {
+    width: 50%;
+}
+
+
