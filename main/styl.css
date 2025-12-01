@@ -232,3 +232,28 @@ footer {
 }
 
 
+.user-panel {
+    position: absolute;
+    top: 60px; 
+    right: 5%; 
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: none; 
+    min-width: 180px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.user-panel a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.user-panel a:hover {
+    background-color: #f0f0f0;
+}
+
+

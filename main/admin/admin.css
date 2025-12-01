@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #1f1c1c;
+}
+.logout-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    background-color: #a72495;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #a700d1;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+form input {
+    padding: 8px;
+    margin: 5px;
+    width: 200px;
+}
+form button {
+    padding: 8px 15px;
+    margin-left: 5px;
+    background-color: #ece924;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fd1b0b;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f0f0f0;
+}
+.delete-btn {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
