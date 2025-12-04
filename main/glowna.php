@@ -60,8 +60,7 @@ if ($isLoggedIn) {
             <a href="panel.php" id="user"><i class="fa-regular fa-user"></i></a>
         <?php endif; ?>
 
-        <a href="#"><i id="wyszukaj" class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#"><i id="koszyk" class="fa-solid fa-cart-shopping"></i></a>
+        <a href="admin/koszyk.php"><i id="koszyk" class="fa-solid fa-cart-shopping"></i></a>
     </div>
 </div>
 
@@ -78,13 +77,13 @@ if ($isLoggedIn) {
         <img src="../assets/zdjecia/glowna1.png" alt="zdjecie1">
         <div class="zdjprzycisk">
             <img src="../assets/zdjecia/glowna2.png" alt="zdjecie2">
-            <a href="koszulki.php"><button class="przycisk">ZOBACZ WIECEJ</button></a>
+            <a href="admin/koszulki.php"><button class="przycisk">ZOBACZ WIECEJ</button></a>
         </div>
         <img src="../assets/zdjecia/glowna3.png" alt="zdjecie3">
     </div>
 
     <section class="bestsellery">
-        <a href="koszulki.html"><button class="btn">ZOBACZ WIECEJ</button></a>
+        <a href="admin/koszulki.php"><button class="btn">ZOBACZ WIECEJ</button></a>
 
         <div class="slider-window">
             <h1>Bestsellery</h1>
@@ -131,9 +130,9 @@ if ($isLoggedIn) {
                     <p>UZYSKAJ 10% NA PIERWSZE ZAMOWIENIE</p>
                     <span>Zapisz sie na nasz newsletter, aby byc na biezaco</span>
 
-                    <div class="inputzapisz">
-                        <input type="email" id="email2" placeholder="Adres e-mail: ">
-                        <button id="b2">Zapisz się</button>
+                    <div class="inputzapisz" style="width: 100%;">
+                        <input type="email" id="email2" placeholder="Adres e-mail: " style="width: 70%;">
+                        <button id="b2" style="margin-left: 5%; padding: 13px;">Zapisz się</button>
                     </div>
 
                 </div>
